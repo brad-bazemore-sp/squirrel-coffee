@@ -1,7 +1,6 @@
 # Squirrel Coffee
 ![alt text] (https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png "Logo")  
 
-
 ##Squirrel Coffee language
 This langue is very similar to java but I will pretend it is not and start from the beginning.  
 
