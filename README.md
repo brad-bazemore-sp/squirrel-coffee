@@ -1,4 +1,4 @@
-# Squirrel Coffee ![alt text] (https://github.com/sonyccd/Squirrel-Coffee/sq_coffee.png "Logo")
+# Squirrel Coffee ![alt text] (https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png "Logo")
 This is my compiler that is a stripped down version of java. This was for my
 compilers class so it has some bugs, but it still works.
 
