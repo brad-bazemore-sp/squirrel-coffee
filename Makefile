@@ -1,4 +1,5 @@
-
+#Change this to the location where the source files are
+#Yes yes I know I need to move to CMake but I have other things to do
 
 work_space =/Users/bradford_bazemore/ClionProjects/littleJava
 
