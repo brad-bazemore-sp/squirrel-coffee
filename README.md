@@ -2,6 +2,8 @@
 ![alt text] (https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png "Logo")  
 
 ##Squirrel Coffee language
+This was built from a class project and credit to the professor who put it together. Not going to list his name on here
+as this class is still taught and would not want people to use this to help them in the class.
 This langue is very similar to java but I will pretend it is not and start from the beginning.  
 
 ### Data types
