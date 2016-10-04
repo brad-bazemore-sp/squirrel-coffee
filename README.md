@@ -1,7 +1,7 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d4d4ee1f737c4c338d27906ac2432873)](https://www.codacy.com/app/snakes-in-the-box/squirrel-coffee?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sonyccd/squirrel-coffee&amp;utm_campaign=Badge_Grade)
+
 # Squirrel Coffee
 ![alt text] (https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png "Logo")  
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d4d4ee1f737c4c338d27906ac2432873)](https://www.codacy.com/app/snakes-in-the-box/squirrel-coffee?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sonyccd/squirrel-coffee&amp;utm_campaign=Badge_Grade)
 
 ##Squirrel Coffee language
 This was built from a class project and credit to the professor who put it together. Not going to list his name on here
