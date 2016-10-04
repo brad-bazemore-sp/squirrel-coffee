@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Squirrel-coffee by sonyccd</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Squirrel-coffee</h1>
+        <h2>A small programming language I built for a class that is kind of becoming its own thing</h2>
+        <a href="https://github.com/sonyccd/squirrel-coffee" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <p><a href="https://www.codacy.com/app/snakes-in-the-box/squirrel-coffee?utm_source=github.com&amp;amp;utm_medium=referral&amp;amp;utm_content=sonyccd/squirrel-coffee&amp;amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/d4d4ee1f737c4c338d27906ac2432873" alt="Codacy Badge"></a></p>
+
+<h1>
+<a id="squirrel-coffee" class="anchor" href="#squirrel-coffee" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Squirrel Coffee</h1>
+
+<p><img src="https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png" alt="alt text" title="Logo">  </p>
+
+<h2>
+<a id="squirrel-coffee-language" class="anchor" href="#squirrel-coffee-language" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Squirrel Coffee language</h2>
+
+<p>This was built from a class project and credit to the professor who put it together. Not going to list his name on here
+as this class is still taught and would not want people to use this to help them in the class.
+This langue is very similar to java but I will pretend it is not and start from the beginning.  </p>
+
+<h3>
+<a id="data-types" class="anchor" href="#data-types" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data types</h3>
+
+<ul>
+<li>Integer</li>
+<li>Float</li>
+</ul>
+
+<p>Only two primitive data types: int and float which can be used as 
+types of variables, parameters, and method return types.</p>
+
+<h3>
+<a id="expressions" class="anchor" href="#expressions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expressions</h3>
+
+<h4>
+<a id="binary-arithmetic-operators" class="anchor" href="#binary-arithmetic-operators" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Binary arithmetic operators</h4>
+
+<ul>
+<li>+</li>
+<li>−</li>
+<li>*</li>
+<li>/</li>
+</ul>
+
+<p>The additive operators + and − have a lower precedence than multiplicative operators * and /.<br>
+In addition, + and − may be used as unary operators which have the highest precedence.  </p>
+
+<p>As in Java, the parenthesis may be used to alter the default precedence of operators.<br>
+Values represented by expressions have types.  Given int arguments, each arithmetic operation returns a result of type int.<br>
+If at least one of the arguments is of type float, the result is always float.<br>
+In case of mixed type arguments, the int argument is automatically converted to float before the operation is performed.<br>
+A method invocation represents a value consistent with the return type of the method.<br>
+A void method invocation may not be used in an expression.<br>
+Explicit casts may be used to convert the type from int to float and from float to int, if needed.</p>
+
+<h4>
+<a id="binary-relational-operators" class="anchor" href="#binary-relational-operators" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Binary relational operators:</h4>
+
+<ul>
+<li>&lt;</li>
+<li>&lt;=</li>
+<li>==</li>
+<li>!=</li>
+<li>&gt;=</li>
+<li>&gt;</li>
+</ul>
+
+<p>Types are handled as above. The equality operators (== and !=) have lower precedence than the other relational operators.<br>
+Relational operators can only be applied to numeric operands (expressions of type int or float). Each relational operator returns a boolean result.<br>
+All of the operators (arithmetic and relational) can only be applied to numeric arguments.<br>
+For example, it is not legal to compare two relational expressions for equality, even though Squirrel Coffee syntax allows it.<br>
+Please note that according the Squirrel Coffee’s syntax, an expression may be composed of a StringLiteral.<br>
+In this case, the type of the expression is String.  However, a String expression cannot be used as an operand to any of the arithmetic or relational operators.<br>
+Squirrel Coffee does not allow method overloading.  Consequently, for every method invocation, there should be a single method declaration matching it.<br>
+A method invocation matches a declaration if the invocation has the same number of arguments as the number of formal parameters in the corresponding method declaration.<br>
+Furthermore, the type of the actual argument expression and the corresponding formal parameter must be the same or convertible.<br>
+If the actual argument expression of type int is provided in place of a formal parameter of type float, an automatic conversion of the actual argument expression to (wider) type float is performed before the call.<br>
+An explicit type cast must be used to pass a float actual argument expression in place of a formal parameter of type int.<br>
+Parameters of primitive types (int and float) are passed by value.  String type parameters are passed by reference (see the SimpleIO class below).</p>
+
+<h3>
+<a id="statements" class="anchor" href="#statements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Statements</h3>
+
+<h4>
+<a id="statements-1" class="anchor" href="#statements-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Statements:</h4>
+
+<ul>
+<li>assignment statement</li>
+<li>return statement</li>
+<li>while statement</li>
+<li>if statement</li>
+<li>method invocation statement</li>
+<li>block statement</li>
+<li>empty statement </li>
+</ul>
+
+<p>The semantics of each statement is the same as in Java.<br>
+The type of a variable, parameter, or field used on the left hand side of an assignment statement must be the same as that of the right hand side expression.<br>
+In addition, if the left hand side is of type float and the expression of type int, an automatic conversion of the expression to float is performed.<br>
+An explicit type cast must be used if a float expression is assigned to an int left hand side.<br>
+The expression used as part of the return statement must be of the same type as the return type of the method in which the return statement is used.<br>
+However, if the method return type is float and the expression is of type int, an automatic conversion of the expression to float is performed.<br>
+An explicit cast must be used if a float expression is returned from a method with the int return type.<br>
+The expression used in the if and while statements must be of type boolean.  That is, in Squirrel Coffee, it must be a relational expression.<br>
+The method invocation statement may invoke a void or a non-void method.<br>
+Unlike in Java, the block statement in Squirrel Coffee may not contain local declarations (only executable statements are allowed).</p>
+
+<h3>
+<a id="classes" class="anchor" href="#classes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Classes</h3>
+
+<p>A Squirrel Coffee program must be composed of only a single public class.  All fields and methods declared in the class must be static and have package visibility (private, protected, and public access qualifiers are not allowed).  In addition, all field declarations must include their initializations.  Furthermore, there must be a single public void main method, which must have an array of Strings as the only argument.<br>
+Squirrel Coffee follows the scoping rules of Java.  However, package declarations and class imports are not permitted.  Consequently, the only Squirrel Coffee class is placed in the default package.
+A Squirrel Coffee method may include local variable declarations, which must be placed ahead of any executable statements.  All local variable declarations must include their initializations.  Methods may be recursive, i.e. a method may invoke itself.  Every method must have a single return statement which must be the last statement in the method body (this requirement is already captured by the Squirrel Coffee grammar above).
+The Squirrel Coffee system includes a class library including just one class, called SimpleIO, described below.</p>
+
+<h3>
+<a id="simpleio" class="anchor" href="#simpleio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SimpleIO</h3>
+
+<p>The SimpleIO class offers a number of static methods to conveniently perform simple reading and writing of Squirrel Coffee data.   Reading is from the standard input and writing is to standard output.  The meaning of the SimpleIO’s methods is self explanatory.  The read methods read and return a single value of the requested type.  If a requested int or float value cannot be read (the data does not exist, or it cannot be interpreted as an int or a float), an error message is printed on the error stream and 0 or 0.0f is returned, respectively.  The print methods write a single value on the standard output.  The println method accepts no arguments and writes the end of line.  Note that printString may write a string literal with a newline (\n) in it, effectively printing the end of line, as well.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/sonyccd/squirrel-coffee/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/sonyccd/squirrel-coffee/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/sonyccd/squirrel-coffee"></a> is maintained by <a href="https://github.com/sonyccd">sonyccd</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
