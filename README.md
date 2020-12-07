@@ -1,9 +1,9 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d4d4ee1f737c4c338d27906ac2432873)](https://www.codacy.com/app/snakes-in-the-box/squirrel-coffee?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=sonyccd/squirrel-coffee&amp;utm_campaign=Badge_Grade)
 
 # Squirrel Coffee
-![alt text] (https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png "Logo")  
+![squirrel coffee](https://github.com/sonyccd/Squirrel-Coffee/blob/master/sq_coffee.png)  
 
-##Squirrel Coffee language
+## Squirrel Coffee language
 This was built from a class project and credit to the professor who put it together. Not going to list his name on here
 as this class is still taught and would not want people to use this to help them in the class.
 This langue is very similar to java but I will pretend it is not and start from the beginning.  
@@ -15,9 +15,9 @@ This langue is very similar to java but I will pretend it is not and start from 
 Only two primitive data types: int and float which can be used as 
 types of variables, parameters, and method return types.
 
-###Expressions
+### Expressions
 
-####Binary arithmetic operators
+#### Binary arithmetic operators
 * +
 * −
 * *
@@ -34,7 +34,7 @@ A method invocation represents a value consistent with the return type of the me
 A void method invocation may not be used in an expression.  
 Explicit casts may be used to convert the type from int to float and from float to int, if needed.
 
-####Binary relational operators:
+#### Binary relational operators:
 * <
 * <=
 * ==
@@ -55,9 +55,9 @@ If the actual argument expression of type int is provided in place of a formal p
 An explicit type cast must be used to pass a float actual argument expression in place of a formal parameter of type int.  
 Parameters of primitive types (int and float) are passed by value.  String type parameters are passed by reference (see the SimpleIO class below).
 
-###Statements
+### Statements
 
-####Statements:
+#### Statements:
 * assignment statement
 * return statement
 * while statement
